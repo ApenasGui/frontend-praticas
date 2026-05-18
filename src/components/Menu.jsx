@@ -1,13 +1,14 @@
+import { NavLink } from "react-router";
+
 function Menu() {
     return (
-        <nav className='mb-4'>
+        <nav>
             <ul className='flex flex-col gap-2'>
-                <li>Dashboard</li>
-                <li>Notas</li>
-                <li>Faltas</li>
-                <li>Boletos</li>
-                <li>Requerimentos</li>
-                <li>Sair</li>
+                <li><NavLink to="/">Dashboard</NavLink></li>
+                <li><NavLink to="/boletos">Boletos</NavLink></li>
+                <li><NavLink to="/faltas">Faltas</NavLink></li>
+                <li><NavLink to="/notas">Notas</NavLink></li>
+                <li><NavLink to="/requerimentos">Requerimentos</NavLink></li>
             </ul>
         </nav>
     )

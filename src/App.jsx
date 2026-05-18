@@ -3,18 +3,18 @@ import Faltas from "./pages/Faltas";
 import Notas from "./pages/Notas";
 import Boletos from "./pages/Boletos";
 import Requerimentos from "./pages/Requerimentos";
+import { Route, Routes } from "react-router";
 
 function App(){
-  const pagina = 2;
-
-  switch(pagina){
-    case 1: return <Dashboard />;
-    case 2: return <Notas />;
-    case 3: return <Faltas />;
-    case 4: return <Boletos />;
-    case 5: return <Requerimentos />;
-    default: return <></>;
-  }
+  return (
+  <Routes>
+    <Route index element={<Dashboard />} />
+    <Route path="boletos" element={<Boletos />} />
+    <Route path="faltas" element={<Faltas />} />
+    <Route path="notas" element={<Notas />} />
+    <Route path="requerimentos" element={<Requerimentos />} />
+  </Routes>
+  )
 };
 
 export default App;
