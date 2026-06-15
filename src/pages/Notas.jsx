@@ -1,5 +1,4 @@
 import Main from "../components/Main";
-import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
 function Notas(){
@@ -37,7 +36,6 @@ function Notas(){
 
     return (
         <>
-            <Sidebar />
             <Main
                 titulo="Minhas Notas"
                 subtitulo="Confira suas notas e desempenho acadêmico"

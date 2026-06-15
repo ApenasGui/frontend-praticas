@@ -6,8 +6,9 @@ export default function Layout(){
     <aside>
         <Sidebar />
     </aside>
+    
     <main>
-        <Outlet></Outlet>
+        <Outlet />
     </main>
     </>
 }

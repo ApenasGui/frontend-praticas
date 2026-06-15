@@ -1,6 +1,5 @@
 import Card from "../components/Card";
 import Main from "../components/Main";
-import Sidebar from "../components/Sidebar";
 
 function Dashboard() {
     const avisos = [
@@ -23,7 +22,6 @@ function Dashboard() {
 
     return (
         <>
-            <Sidebar />
             <Main 
                 titulo="Olá aluno"
                 subtitulo="Bem-vindo ao portal do aluno online!"
