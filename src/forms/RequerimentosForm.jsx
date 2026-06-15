@@ -1,7 +1,10 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
+import { criarRequerimento } from "../services/requerimentoService";
 
 function RequerimentoForm() {
+    const navigate = useNavigate()
+
     const {
         register,
         handleSubmit,
@@ -9,9 +12,11 @@ function RequerimentoForm() {
         reset,
     } = useForm();
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
         console.log(data);
+        await criarRequerimento(data)
         reset();
+        navigate("/requerimentos")
   };
 
   return (

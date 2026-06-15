@@ -1,0 +1,17 @@
+{
+  "requerimentos": [
+    {
+      "tipo": "atestado",
+      "descricao": "teste de descricao",
+      "data": "2026-05-15",
+      "id": "QLPGPeDIxkE"
+    },
+    {
+      "tipo": "revisao_nota",
+      "descricao": "nota errada",
+      "data": "2026-06-16",
+      "id": "Ze2CfS7gacU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
